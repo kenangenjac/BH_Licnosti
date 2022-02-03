@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BH_Licnosti.NewFolder.Writer4Page"
+             NavigationPage.HasNavigationBar="False">
+
+    <RelativeLayout BackgroundColor="#80b3ff">
+        <Button x:Name="Nazad" BackgroundColor="Transparent" Text="&#x2B05;" TextColor="Yellow" FontAttributes="Bold" FontSize="35" HorizontalOptions="Start" VerticalOptions="Start" Margin="0, 0, 0, 0" Padding="0, 0, 0, 0" HeightRequest="100" 
+                 RelativeLayout.XConstraint="0"
+                 RelativeLayout.YConstraint="-20"
+                 RelativeLayout.WidthConstraint="50"
+                 RelativeLayout.HeightConstraint="60"
+                Clicked="Nazad_Clicked"/>
+
+        <Frame HorizontalOptions="Center" Padding="0" Margin="10, 10, 0, 10" BackgroundColor="#f2f2f2" CornerRadius="50" WidthRequest="340"
+                 RelativeLayout.XConstraint="0"
+                 RelativeLayout.YConstraint="10"
+                 RelativeLayout.WidthConstraint="400"
+                 RelativeLayout.HeightConstraint="650"
+               BorderColor="Yellow">
+
+            <StackLayout>
+
+                <Frame HorizontalOptions="Center" Padding="0" Margin="0, 0, 0, 0" CornerRadius="40">
+
+                    <StackLayout HorizontalOptions="Center">
+
+                        <StackLayout Margin="0, 0, 0, 10" HorizontalOptions="Center">
+                            <Frame CornerRadius="20" WidthRequest="340" Padding="0" HorizontalOptions="Center">
+                                <Image Source="https://www.laguna.rs/_img/pisci/copic-sajt.jpg" WidthRequest="300" HeightRequest="200"/>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout HorizontalOptions="Center" Margin="10, 10, 10, 10">
+                            <Label Text="BRANKO ČOPIĆ" HorizontalTextAlignment="Center" TextColor="#3570f0" FontAttributes="Bold"/>
+                            <Label Text="HAŠANI" HorizontalTextAlignment="Center" TextColor="#3570f0" FontAttributes="Bold"/>
+                            <Label Text="1915 - 1984." HorizontalTextAlignment="Center" TextColor="#3570f0" FontAttributes="Bold"/>
+                        </StackLayout>
+
+                    </StackLayout>
+
+                </Frame>
+
+                <Label Text="DETALJNIJE:" TextColor="Black" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="0, 5, 0, 0"/>
+
+                <Frame BackgroundColor="#f2f2f2" Padding="15" Margin="0,5,0,0" HasShadow="False">
+                    <Label HorizontalTextAlignment="Center" TextColor="Black" Text="Isak Samokovlija je rođen u Goraždu, tada dijelu Austro-Ugarskog carstva, 3. septembra 1889. u porodici sefardskih (španskih) Jevreja. Njegova porodica se doselila iz Samokova u Bugarskoj, po čemu su dobili prezime Samokovlija. Nakon djetinjstva provedenog u Goraždu, odlazi u Sarajevo i završava Prvu gimnaziju, te studira medicinu u Beču. Nakon studija, radio je kao ljekar u Goraždu, Fojnici i Sarajevu. Prvu pripovjetku Rafina avlija objavljuje 1927. a dvije godine kasnije izlazi i prva zbirka pripovijetki Od proljeća do proljeća u izdanju Grupe sarajevskih književnika. U mladosti je pisao i pjesme."/>
+                </Frame>
+
+            </StackLayout>
+
+        </Frame>
+    </RelativeLayout>
+</ContentPage>

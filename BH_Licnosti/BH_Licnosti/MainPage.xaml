@@ -1,25 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BH_Licnosti.MainPage">
+             x:Class="BH_Licnosti.MainPage"
+             NavigationPage.HasNavigationBar="False">
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="Red" FontSize="36"/>
+    <StackLayout BackgroundColor="#f6f6f6">
+        <Frame BackgroundColor="#4d79ff" CornerRadius="20" Margin="0, -20, 0, 0">
+            <Label HorizontalTextAlignment="Center" FontAttributes="Bold" Text="POZNATE LIČNOSTI BOSNE I HERCEGOVINE" TextColor="White" FontSize="30" Padding="0, 10, 0, 0"/>
         </Frame>
-
-        <Label Text="Branch 2" FontSize="16" Padding="30,0,30,0"/>
-        <Label Text="Branch 1!" FontSize="Title" Padding="30,10,30,10"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+        <Frame Margin="0, 50, 0, 0"  CornerRadius="300" BorderColor="Yellow">
+            <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Coat_of_arms_of_Kingdom_of_Bosnia.svg/399px-Coat_of_arms_of_Kingdom_of_Bosnia.svg.png" HorizontalOptions="Center" WidthRequest="300" HeightRequest="300"/>
+        </Frame>
+        <Button x:Name="toCategories" Text="Nastavi" BackgroundColor="#4d79ff" TextColor="White" HorizontalOptions="CenterAndExpand" FontSize="24" HeightRequest="50" VerticalOptions="Center" CornerRadius="10" Margin="0, 50, 0 ,0" WidthRequest="210" FontAttributes="Bold" Clicked="toCategories_Clicked"/>
     </StackLayout>
 
 </ContentPage>

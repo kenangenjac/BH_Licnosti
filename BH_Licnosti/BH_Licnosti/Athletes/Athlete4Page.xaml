@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BH_Licnosti.Athletes.Athlete4Page"
+             NavigationPage.HasNavigationBar="False">
+
+    <RelativeLayout BackgroundColor="#80b3ff">
+        <Button x:Name="Nazad" BackgroundColor="Transparent" Text="&#x2B05;" TextColor="Yellow" FontAttributes="Bold" FontSize="35" HorizontalOptions="Start" VerticalOptions="Start" Margin="0, 0, 0, 0" Padding="0, 0, 0, 0" HeightRequest="100" 
+                 RelativeLayout.XConstraint="0"
+                 RelativeLayout.YConstraint="-20"
+                 RelativeLayout.WidthConstraint="50"
+                 RelativeLayout.HeightConstraint="60"
+                Clicked="Nazad_Clicked"/>
+
+        <Frame HorizontalOptions="Center" Padding="0" Margin="10, 10, 0, 10" BackgroundColor="#f2f2f2" CornerRadius="50" WidthRequest="340"
+                 RelativeLayout.XConstraint="0"
+                 RelativeLayout.YConstraint="10"
+                 RelativeLayout.WidthConstraint="400"
+                 RelativeLayout.HeightConstraint="650"
+                 BorderColor="Yellow">
+
+            <StackLayout>
+
+                <Frame HorizontalOptions="Center" Padding="0" Margin="0, 0, 0, 0" CornerRadius="40">
+
+                    <StackLayout HorizontalOptions="Center">
+
+                        <StackLayout Margin="0, 0, 0, 10" HorizontalOptions="Center">
+                            <Frame CornerRadius="20" WidthRequest="340" Padding="0" HorizontalOptions="Center">
+                                <Image Source="https://img.a.transfermarkt.technology/portrait/big/102705-1528792950.jpg?lm=1" WidthRequest="300" HeightRequest="200"/>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout HorizontalOptions="Center" Margin="10, 10, 10, 10">
+                            <Label Text="SAFET SUŠIĆ" HorizontalTextAlignment="Center" TextColor="#3570f0" FontAttributes="Bold"/>
+                            <Label Text="ZAVIDOVIĆI" HorizontalTextAlignment="Center" TextColor="#3570f0" FontAttributes="Bold"/>
+                            <Label Text="1955." HorizontalTextAlignment="Center" TextColor="#3570f0" FontAttributes="Bold"/>
+                        </StackLayout>
+
+                    </StackLayout>
+
+                </Frame>
+
+                <Label Text="DETALJNIJE:" TextColor="Black" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="0, 5, 0, 0"/>
+
+                <Frame BackgroundColor="#f2f2f2" Padding="15" Margin="0,-10,0,0" HasShadow="False">
+                    <Label HorizontalTextAlignment="Center" TextColor="Black" Text="Član košarkaškog kluba Sloboda iz Tuzle postao je 1968. i u ovom klubu ostao je do 1972. godine,[7] kad postaje član KK Bosne, kada je odigrao i prvu utakmicu protiv Jugoplastike iz Splita. Za Bosnu je odigrao 700 utakmica i postigao oko 14.000 koševa. Sa ekipom Bosne osvajao je prvenstvo i kup Jugoslavije, bio prvak Evrope u sezoni 1978/79. i viceprvak svijeta. Četiri puta biran je za najboljeg sportistu SR Bosne i Hercegovine da bi onda dobio specijalno priznanje kao as izvan serije i postao član žirija za izbor sportiste. Godine 1980. izabran je za najboljeg košarkaša u Jugoslaviji.Godine 1980 prešao je u redove Real Madrida gdje je igrao tri godine. Smatra se jednim od najboljih igrača Real Madrida."/>
+                </Frame>
+
+            </StackLayout>
+
+        </Frame>
+    </RelativeLayout>
+</ContentPage>

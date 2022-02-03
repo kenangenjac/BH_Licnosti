@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BH_Licnosti.Actors.Actor3Page"
+             NavigationPage.HasNavigationBar="False">
+
+    <RelativeLayout BackgroundColor="#80b3ff">
+        <Button x:Name="Nazad" BackgroundColor="Transparent" Text="&#x2B05;" TextColor="Yellow" FontAttributes="Bold" FontSize="35" HorizontalOptions="Start" VerticalOptions="Start" Margin="0, 0, 0, 0" Padding="0, 0, 0, 0" HeightRequest="100" 
+                 RelativeLayout.XConstraint="0"
+                 RelativeLayout.YConstraint="-20"
+                 RelativeLayout.WidthConstraint="50"
+                 RelativeLayout.HeightConstraint="60"
+                Clicked="Nazad_Clicked"/>
+
+        <Frame HorizontalOptions="Center" Padding="0" Margin="10, 10, 0, 10" BackgroundColor="#f2f2f2" CornerRadius="50" WidthRequest="340"
+                 RelativeLayout.XConstraint="0"
+                 RelativeLayout.YConstraint="10"
+                 RelativeLayout.WidthConstraint="400"
+                 RelativeLayout.HeightConstraint="650"
+               BorderColor="Yellow">
+
+            <StackLayout>
+
+                <Frame HorizontalOptions="Center" Padding="0" Margin="0, 0, 0, 0" CornerRadius="40">
+
+                    <StackLayout HorizontalOptions="Center">
+
+                        <StackLayout Margin="0, 0, 0, 10" HorizontalOptions="Center">
+                            <Frame CornerRadius="20" WidthRequest="340" Padding="0" HorizontalOptions="Center">
+                                <Image Source="https://www.themoviedb.org/t/p/w235_and_h235_face/ttcSPPfNw1xwlOmD10o28JbbFZU.jpg" WidthRequest="300" HeightRequest="200"/>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout HorizontalOptions="Center" Margin="10, 10, 10, 10">
+                            <Label Text="ADMIR GLAMOČAK" HorizontalTextAlignment="Center" TextColor="#3570f0" FontAttributes="Bold"/>
+                            <Label Text="SARAJEVO" HorizontalTextAlignment="Center" TextColor="#3570f0" FontAttributes="Bold"/>
+                            <Label Text="1962 - " HorizontalTextAlignment="Center" TextColor="#3570f0" FontAttributes="Bold"/>
+                        </StackLayout>
+
+                    </StackLayout>
+
+                </Frame>
+
+                <Label Text="DETALJNIJE:" TextColor="Black" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="0, 5, 0, 0"/>
+
+                <Frame BackgroundColor="#f2f2f2" Padding="15" Margin="0,5,0,0" HasShadow="False">
+                    <Label HorizontalTextAlignment="Center" TextColor="Black" Text="Admir Glamočak, rođen 23. juna 1962. godine u Sarajevu,[1][2] je bosanskohercegovački pozorišni i filmski glumac i reditelj. Diplomirao je na Akademiji scenskih umjetnosti u Sarajevu u klasi profesora Bore Stjepanovića 1984/85. godine. Bio je student prve generacije upisane na Odsjek za glumu. Već u toku školovanja igra neke od zapaženih teatarskih uloga, a osobito je upamćen njegov udio u kultnoj predstavi Otvorene scene Obala - Audicija. Nakon završenog studija ostaje na Akademiji kao asistent i vremenom napreduje u sve viša zvanja, da bi u toku rata u Bosni i Hercegovini, bio imenovan i za dekana Akademije."/>
+                </Frame>
+
+            </StackLayout>
+
+        </Frame>
+    </RelativeLayout>
+</ContentPage>
+    
+    

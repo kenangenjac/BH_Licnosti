@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BH_Licnosti.NewFolder.Writer1Page"
+             NavigationPage.HasNavigationBar="False">
+
+    <RelativeLayout BackgroundColor="#80b3ff">
+        <Button x:Name="Nazad" BackgroundColor="Transparent" Text="&#x2B05;" TextColor="Yellow"
+                FontAttributes="Bold" FontSize="35" HorizontalOptions="Start" VerticalOptions="Start"
+                Margin="0, 0, 0, 0" Padding="0, 0, 0, 0" HeightRequest="100" 
+                RelativeLayout.XConstraint="0"
+                RelativeLayout.YConstraint="-20"
+                RelativeLayout.WidthConstraint="50"
+                RelativeLayout.HeightConstraint="60"
+                Clicked="Nazad_Clicked"/>
+
+        <Frame HorizontalOptions="Center" Padding="0" Margin="10, 10, 0, 10" BackgroundColor="#f2f2f2"
+                CornerRadius="50" WidthRequest="340"
+                RelativeLayout.XConstraint="0"
+                RelativeLayout.YConstraint="10"
+                RelativeLayout.WidthConstraint="400"
+                RelativeLayout.HeightConstraint="650"
+                BorderColor="Yellow">
+
+            <StackLayout>
+
+                <Frame HorizontalOptions="Center" Padding="0" Margin="0, 0, 0, 0" CornerRadius="40">
+
+                    <StackLayout HorizontalOptions="Center">
+
+                        <StackLayout Margin="0, 0, 0, 10" HorizontalOptions="Center">
+                            <Frame CornerRadius="20" WidthRequest="340" Padding="0" HorizontalOptions="Center">
+                                <Image Source="https://upload.wikimedia.org/wikipedia/sr/8/86/Mselimovic.jpg" WidthRequest="300" HeightRequest="200"/>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout HorizontalOptions="Center" Margin="10, 10, 10, 10">
+                            <Label Text="MEHMED SELIMOVIĆ" HorizontalTextAlignment="Center" TextColor="#3570f0" FontAttributes="Bold"/>
+                            <Label Text="TUZLA" HorizontalTextAlignment="Center" TextColor="#3570f0" FontAttributes="Bold"/>
+                            <Label Text="1910 - 1982." HorizontalTextAlignment="Center" TextColor="#3570f0" FontAttributes="Bold"/>
+                        </StackLayout>
+
+                    </StackLayout>
+
+                </Frame>
+
+                <Label Text="DETALJNIJE:" TextColor="Black" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="0, 5, 0, 0"/>
+
+                <Frame BackgroundColor="#f2f2f2" Padding="15" Margin="0,-10,0,0" HasShadow="False">
+                    <Label HorizontalTextAlignment="Center" TextColor="Black" Text="Rodio se u uglednoj muslimanskoj porodici iz Bileće, od oca Alije i majke Paše.[3] Njegov otac Alija rodio se u Visokom, prilikom selidbe njegove porodice iz Bileće prema sjeveroistoku Bosne gdje su imali znatna imanja.[4] Meša je rođen u Tuzli, gdje je završio osnovnu školu i gimnaziju. Godine 1930. godine upisao se na studijsku grupu srpskohrvatski jezik i jugoslovenska književnost Filozofskog fakulteta Univerziteta u Beogradu. Diplomirao je 1934. godine, od 1935. do 1941. godine radi kao profesor Građanske škole, a potom je 1936. postavljen za suplenta u Realnoj gimnaziji u Tuzli. Prve dvije godine rata živi u Tuzli, gdje ga hapse zbog saradnje sa NOP-om, a u maju 1943. godine prelazi na oslobođenu teritoriju, postaje član KPJ i član Agitprop-a za istočnu Bosnu."/>
+                </Frame>
+
+            </StackLayout>
+
+        </Frame>
+    </RelativeLayout>
+
+</ContentPage>

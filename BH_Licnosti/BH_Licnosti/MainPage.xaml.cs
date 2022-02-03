@@ -13,6 +13,12 @@ namespace BH_Licnosti
         public MainPage()
         {
             InitializeComponent();
+
+        }
+
+        private async void toCategories_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CategoriesPage());
         }
     }
 }
